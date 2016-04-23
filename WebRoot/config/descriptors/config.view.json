@@ -1,0 +1,46 @@
+{
+	config.category.view:{
+		title:'配置分类',
+		entity:'config.category',
+		fields:['category_id','name','code','remarks'],
+		buttons:[
+			{
+				title:'新建',
+				iconCls:'icon-add',
+				function:'createOne()'
+			},
+			{
+				title:'修改',
+				iconCls:'icon-edit',
+				function:'updateOne()'
+			},
+			{
+				title:'删除',
+				iconCls:'icon-remove',
+				function:'removeOne()'
+			}
+		]
+	},
+	config.config.view:{
+		title:'配置信息',
+		entity:'config.config',
+		fields:['config_id', 'category_code','name','config_key','config_value','remarks'],
+		buttons:[
+			{
+				title:'新建',
+				iconCls:'icon-add',
+				function:'createOne()'
+			},
+			{
+				title:'修改',
+				iconCls:'icon-edit',
+				function:'updateOne()'
+			},
+			{
+				title:'删除',
+				iconCls:'icon-remove',
+				function:'removeOne()'
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<id>pas</id>
+	<filters>
+		<filter service="pasURIAuthenticationFilter" />
+	</filters>
+	<imports>
+		<import type="module" path="default-module.xml" />
+	</imports>
+	<requests>
+		<request type="do" service="com.flying.pas.request.DoRequestService"/>
+	</requests>
+	<configs>
+		<config name="contentType">text/html; charset=UTF-8</config>
+		<config name="encoding">UTF-8</config>
+		<config name="uploadURL">http://localhost:8080/uploads/</config>
+		<config name="metadata-files">
+			/config/descriptors/security.entity.json;
+			/config/descriptors/security.view.json;
+			/config/descriptors/config.entity.json;
+			/config/descriptors/config.view.json
+		</config>
+	</configs>
+</module>
